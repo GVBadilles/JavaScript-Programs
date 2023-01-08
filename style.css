@@ -1,0 +1,161 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,900;1,700&display=swap");
+
+:root {
+	--normal-font: 400;
+	--bold-font: 600;
+	--bolder-font: 900;
+	--primary-color: #0f9fd4;
+	--secondary-color: #008f32;
+	--line-height: 1.7rem;
+	--transition: 0.4s ease-in;
+}
+
+html {
+	scroll-behavior: smooth;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  transition: var(--transition);
+}
+
+body {
+	font-family: "Roboto", sans-serif;
+}
+
+ul li {
+	list-style-type: none;
+}
+
+a {
+	text-decoration: none;
+	color: var(--primary-color);
+}
+
+a:hover {
+	color: var(--secondary-color);
+}
+
+.firstw {
+	color: var(--secondary-color);
+}
+
+.secondw {
+	color: var(--primary-color);
+}
+
+nav {
+  background: #fff;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 1.5rem;
+  box-shadow: 2px 3px 2px #f1f1f1;
+  position: sticky;
+  top: 0;
+  left: 0;
+  z-index: 1;
+}
+
+ul {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.nav-item {
+	margin-left: 2rem;
+}
+
+.nav-link {
+	font-weight: var(--bold-font);
+}
+
+.password-main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(255, 253, 208);
+  height: 100vh;
+}
+
+.password-generator {
+  padding: 40px;
+  background-color: #089c77;
+  color: white;
+  font-size: 20px;
+  font-family: sans-serif;
+}
+
+.password-generator div {
+  display: flex;
+  justify-content: space-between;
+  margin: 20px 0;
+}
+
+.password {
+  min-width: 280px;
+  background-color: #02523e;
+  color: rgb(199, 199, 199);
+}
+
+.password p {
+  padding: 6px 10px;
+}
+
+.password i {
+  background-color: rgba(0, 0, 0, 2);
+  padding: 6px 10px;
+}
+
+.password-generator button {
+  width: 100%;
+  border: none;
+  color: rgba(255, 255, 255, 2);
+  background-color: #014232;
+  padding: 10px;
+}
+
+.stop-watch-main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(255, 253, 208);
+  height: 100vh;
+}
+
+.stopwatch {
+  padding: 40px;
+  background-color: #089c77;
+  color: white;
+  text-align: center;
+  font-size: 20px;
+  font-family: sans-serif;
+}
+
+#seconds, #tens{
+  font-size:2em;
+}
+
+.stopwatch button{
+  @include corners (5px);
+  background: #014232;
+  color: white;
+  border: solid 1px #fff;
+  text-decoration: none;
+  cursor: pointer;
+  font-size: 1.2em;
+  padding: 18px 10px;
+  width: 180px;
+  margin: 10px;
+  outline: none;
+}
+
+button:hover{
+  transition: var(--transition);
+  background: #fff;
+  border: solid 1px $white;
+  color: var(--secondary-color);
+}
